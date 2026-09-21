@@ -28,163 +28,167 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtNumRepuesto = new TextBox();
-            txtDescripcion = new TextBox();
-            txtPrecio = new TextBox();
             lstRepuestos = new ListBox();
-            btnGuardar = new Button();
-            cmbOrigen = new ComboBox();
-            cmbMarca = new ComboBox();
-            lblNumeroRepuesto = new Label();
-            lblDesc = new Label();
-            lblPrecio = new Label();
             lblTitulo = new Label();
-            lblMarca = new Label();
-            lblOrigen = new Label();
-            lblSubtitulo = new Label();
-            cmbMarca2 = new ComboBox();
-            rbNacional = new RadioButton();
-            rbImportado = new RadioButton();
+            tbCargaDeRepuestos = new TabControl();
+            tbpCarga = new TabPage();
+            tbpBusqueda = new TabPage();
+            lblPrecio = new Label();
+            lblDesc = new Label();
+            lblNumeroRepuesto = new Label();
+            btnGuardar = new Button();
+            txtPrecio = new TextBox();
+            txtDescripcion = new TextBox();
+            txtNumRepuesto = new TextBox();
             grbBuscador = new GroupBox();
+            rbNacional = new RadioButton();
+            cmbMarca2 = new ComboBox();
+            rbImportado = new RadioButton();
+            lblSubtitulo = new Label();
+            lblOrigen = new Label();
+            lblMarca = new Label();
+            cmbMarca = new ComboBox();
+            cmbOrigen = new ComboBox();
+            tbCargaDeRepuestos.SuspendLayout();
+            tbpCarga.SuspendLayout();
+            tbpBusqueda.SuspendLayout();
             grbBuscador.SuspendLayout();
             SuspendLayout();
-            // 
-            // txtNumRepuesto
-            // 
-            txtNumRepuesto.Location = new Point(218, 81);
-            txtNumRepuesto.Name = "txtNumRepuesto";
-            txtNumRepuesto.Size = new Size(100, 23);
-            txtNumRepuesto.TabIndex = 1;
-            // 
-            // txtDescripcion
-            // 
-            txtDescripcion.Location = new Point(218, 119);
-            txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(100, 23);
-            txtDescripcion.TabIndex = 2;
-            // 
-            // txtPrecio
-            // 
-            txtPrecio.Location = new Point(218, 166);
-            txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(100, 23);
-            txtPrecio.TabIndex = 3;
             // 
             // lstRepuestos
             // 
             lstRepuestos.FormattingEnabled = true;
-            lstRepuestos.Location = new Point(44, 335);
+            lstRepuestos.Location = new Point(3, 226);
             lstRepuestos.Name = "lstRepuestos";
-            lstRepuestos.Size = new Size(402, 49);
+            lstRepuestos.Size = new Size(448, 64);
             lstRepuestos.TabIndex = 6;
-            // 
-            // btnGuardar
-            // 
-            btnGuardar.Font = new Font("Arial Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnGuardar.Location = new Point(330, 287);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(116, 42);
-            btnGuardar.TabIndex = 6;
-            btnGuardar.Text = "GUARDAR";
-            btnGuardar.UseVisualStyleBackColor = true;
-            // 
-            // cmbOrigen
-            // 
-            cmbOrigen.FormattingEnabled = true;
-            cmbOrigen.Items.AddRange(new object[] { "N", "I" });
-            cmbOrigen.Location = new Point(218, 258);
-            cmbOrigen.Name = "cmbOrigen";
-            cmbOrigen.Size = new Size(121, 23);
-            cmbOrigen.TabIndex = 5;
-            // 
-            // cmbMarca
-            // 
-            cmbMarca.FormattingEnabled = true;
-            cmbMarca.Items.AddRange(new object[] { "F", "P", "R" });
-            cmbMarca.Location = new Point(218, 211);
-            cmbMarca.Name = "cmbMarca";
-            cmbMarca.Size = new Size(121, 23);
-            cmbMarca.TabIndex = 4;
-            cmbMarca.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
-            // 
-            // lblNumeroRepuesto
-            // 
-            lblNumeroRepuesto.AutoSize = true;
-            lblNumeroRepuesto.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
-            lblNumeroRepuesto.Location = new Point(44, 74);
-            lblNumeroRepuesto.Name = "lblNumeroRepuesto";
-            lblNumeroRepuesto.Size = new Size(168, 30);
-            lblNumeroRepuesto.TabIndex = 12;
-            lblNumeroRepuesto.Text = "Nº de Repuesto:";
-            // 
-            // lblDesc
-            // 
-            lblDesc.AutoSize = true;
-            lblDesc.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
-            lblDesc.Location = new Point(82, 112);
-            lblDesc.Name = "lblDesc";
-            lblDesc.Size = new Size(129, 30);
-            lblDesc.TabIndex = 13;
-            lblDesc.Text = "Descripción:";
-            // 
-            // lblPrecio
-            // 
-            lblPrecio.AutoSize = true;
-            lblPrecio.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
-            lblPrecio.Location = new Point(134, 157);
-            lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(77, 30);
-            lblPrecio.TabIndex = 14;
-            lblPrecio.Text = "Precio:";
             // 
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(99, 9);
+            lblTitulo.Location = new Point(110, 9);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(343, 47);
             lblTitulo.TabIndex = 15;
             lblTitulo.Text = "Venta de Repuestos";
             // 
-            // lblMarca
+            // tbCargaDeRepuestos
             // 
-            lblMarca.AutoSize = true;
-            lblMarca.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
-            lblMarca.Location = new Point(134, 202);
-            lblMarca.Name = "lblMarca";
-            lblMarca.Size = new Size(77, 30);
-            lblMarca.TabIndex = 16;
-            lblMarca.Text = "Marca:";
+            tbCargaDeRepuestos.Controls.Add(tbpCarga);
+            tbCargaDeRepuestos.Controls.Add(tbpBusqueda);
+            tbCargaDeRepuestos.Location = new Point(44, 68);
+            tbCargaDeRepuestos.Name = "tbCargaDeRepuestos";
+            tbCargaDeRepuestos.SelectedIndex = 0;
+            tbCargaDeRepuestos.Size = new Size(462, 341);
+            tbCargaDeRepuestos.TabIndex = 18;
             // 
-            // lblOrigen
+            // tbpCarga
             // 
-            lblOrigen.AutoSize = true;
-            lblOrigen.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
-            lblOrigen.Location = new Point(128, 249);
-            lblOrigen.Name = "lblOrigen";
-            lblOrigen.Size = new Size(83, 30);
-            lblOrigen.TabIndex = 17;
-            lblOrigen.Text = "Origen:";
+            tbpCarga.Controls.Add(lblOrigen);
+            tbpCarga.Controls.Add(lblMarca);
+            tbpCarga.Controls.Add(cmbMarca);
+            tbpCarga.Controls.Add(cmbOrigen);
+            tbpCarga.Controls.Add(lstRepuestos);
+            tbpCarga.Controls.Add(lblPrecio);
+            tbpCarga.Controls.Add(lblDesc);
+            tbpCarga.Controls.Add(lblNumeroRepuesto);
+            tbpCarga.Controls.Add(btnGuardar);
+            tbpCarga.Controls.Add(txtPrecio);
+            tbpCarga.Controls.Add(txtDescripcion);
+            tbpCarga.Controls.Add(txtNumRepuesto);
+            tbpCarga.Location = new Point(4, 24);
+            tbpCarga.Name = "tbpCarga";
+            tbpCarga.Padding = new Padding(3);
+            tbpCarga.Size = new Size(454, 313);
+            tbpCarga.TabIndex = 0;
+            tbpCarga.Text = "Carga de repuesto";
+            tbpCarga.UseVisualStyleBackColor = true;
+            tbpCarga.Click += this.tabPage1_Click;
             // 
-            // lblSubtitulo
+            // tbpBusqueda
             // 
-            lblSubtitulo.AutoSize = true;
-            lblSubtitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSubtitulo.Location = new Point(44, 387);
-            lblSubtitulo.Name = "lblSubtitulo";
-            lblSubtitulo.Size = new Size(203, 32);
-            lblSubtitulo.TabIndex = 11;
-            lblSubtitulo.Text = "Buscar Repuesto";
+            tbpBusqueda.Controls.Add(grbBuscador);
+            tbpBusqueda.Controls.Add(lblSubtitulo);
+            tbpBusqueda.Location = new Point(4, 24);
+            tbpBusqueda.Name = "tbpBusqueda";
+            tbpBusqueda.Padding = new Padding(3);
+            tbpBusqueda.Size = new Size(454, 313);
+            tbpBusqueda.TabIndex = 1;
+            tbpBusqueda.Text = "Buscador de repuesto";
+            tbpBusqueda.UseVisualStyleBackColor = true;
             // 
-            // cmbMarca2
+            // lblPrecio
             // 
-            cmbMarca2.FormattingEnabled = true;
-            cmbMarca2.Items.AddRange(new object[] { "F", "P", "R" });
-            cmbMarca2.Location = new Point(6, 22);
-            cmbMarca2.Name = "cmbMarca2";
-            cmbMarca2.Size = new Size(121, 23);
-            cmbMarca2.TabIndex = 19;
+            lblPrecio.AutoSize = true;
+            lblPrecio.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
+            lblPrecio.Location = new Point(118, 164);
+            lblPrecio.Name = "lblPrecio";
+            lblPrecio.Size = new Size(77, 30);
+            lblPrecio.TabIndex = 26;
+            lblPrecio.Text = "Precio:";
+            // 
+            // lblDesc
+            // 
+            lblDesc.AutoSize = true;
+            lblDesc.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
+            lblDesc.Location = new Point(66, 124);
+            lblDesc.Name = "lblDesc";
+            lblDesc.Size = new Size(129, 30);
+            lblDesc.TabIndex = 25;
+            lblDesc.Text = "Descripción:";
+            // 
+            // lblNumeroRepuesto
+            // 
+            lblNumeroRepuesto.AutoSize = true;
+            lblNumeroRepuesto.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
+            lblNumeroRepuesto.Location = new Point(28, 81);
+            lblNumeroRepuesto.Name = "lblNumeroRepuesto";
+            lblNumeroRepuesto.Size = new Size(168, 30);
+            lblNumeroRepuesto.TabIndex = 24;
+            lblNumeroRepuesto.Text = "Nº de Repuesto:";
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.Font = new Font("Arial Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnGuardar.Location = new Point(332, 178);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(116, 42);
+            btnGuardar.TabIndex = 23;
+            btnGuardar.Text = "GUARDAR";
+            btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // txtPrecio
+            // 
+            txtPrecio.Location = new Point(202, 173);
+            txtPrecio.Name = "txtPrecio";
+            txtPrecio.Size = new Size(100, 23);
+            txtPrecio.TabIndex = 20;
+            // 
+            // txtDescripcion
+            // 
+            txtDescripcion.Location = new Point(202, 131);
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.Size = new Size(100, 23);
+            txtDescripcion.TabIndex = 19;
+            // 
+            // txtNumRepuesto
+            // 
+            txtNumRepuesto.Location = new Point(202, 88);
+            txtNumRepuesto.Name = "txtNumRepuesto";
+            txtNumRepuesto.Size = new Size(100, 23);
+            txtNumRepuesto.TabIndex = 18;
+            // 
+            // grbBuscador
+            // 
+            grbBuscador.Controls.Add(rbNacional);
+            grbBuscador.Controls.Add(cmbMarca2);
+            grbBuscador.Controls.Add(rbImportado);
+            grbBuscador.Location = new Point(15, 47);
+            grbBuscador.Name = "grbBuscador";
+            grbBuscador.Size = new Size(240, 70);
+            grbBuscador.TabIndex = 12;
+            grbBuscador.TabStop = false;
             // 
             // rbNacional
             // 
@@ -197,6 +201,15 @@
             rbNacional.Text = "N";
             rbNacional.UseVisualStyleBackColor = true;
             // 
+            // cmbMarca2
+            // 
+            cmbMarca2.FormattingEnabled = true;
+            cmbMarca2.Items.AddRange(new object[] { "F", "P", "R" });
+            cmbMarca2.Location = new Point(6, 22);
+            cmbMarca2.Name = "cmbMarca2";
+            cmbMarca2.Size = new Size(121, 23);
+            cmbMarca2.TabIndex = 19;
+            // 
             // rbImportado
             // 
             rbImportado.AutoSize = true;
@@ -208,39 +221,68 @@
             rbImportado.Text = "I";
             rbImportado.UseVisualStyleBackColor = true;
             // 
-            // grbBuscador
+            // lblSubtitulo
             // 
-            grbBuscador.Controls.Add(rbNacional);
-            grbBuscador.Controls.Add(cmbMarca2);
-            grbBuscador.Controls.Add(rbImportado);
-            grbBuscador.Location = new Point(46, 422);
-            grbBuscador.Name = "grbBuscador";
-            grbBuscador.Size = new Size(240, 70);
-            grbBuscador.TabIndex = 7;
-            grbBuscador.TabStop = false;
+            lblSubtitulo.AutoSize = true;
+            lblSubtitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSubtitulo.Location = new Point(13, 12);
+            lblSubtitulo.Name = "lblSubtitulo";
+            lblSubtitulo.Size = new Size(203, 32);
+            lblSubtitulo.TabIndex = 13;
+            lblSubtitulo.Text = "Buscar Repuesto";
+            // 
+            // lblOrigen
+            // 
+            lblOrigen.AutoSize = true;
+            lblOrigen.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
+            lblOrigen.Location = new Point(112, 44);
+            lblOrigen.Name = "lblOrigen";
+            lblOrigen.Size = new Size(83, 30);
+            lblOrigen.TabIndex = 32;
+            lblOrigen.Text = "Origen:";
+            // 
+            // lblMarca
+            // 
+            lblMarca.AutoSize = true;
+            lblMarca.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
+            lblMarca.Location = new Point(118, -3);
+            lblMarca.Name = "lblMarca";
+            lblMarca.Size = new Size(77, 30);
+            lblMarca.TabIndex = 31;
+            lblMarca.Text = "Marca:";
+            // 
+            // cmbMarca
+            // 
+            cmbMarca.FormattingEnabled = true;
+            cmbMarca.Items.AddRange(new object[] { "F", "P", "R" });
+            cmbMarca.Location = new Point(202, 6);
+            cmbMarca.Name = "cmbMarca";
+            cmbMarca.Size = new Size(121, 23);
+            cmbMarca.TabIndex = 29;
+            // 
+            // cmbOrigen
+            // 
+            cmbOrigen.FormattingEnabled = true;
+            cmbOrigen.Items.AddRange(new object[] { "N", "I" });
+            cmbOrigen.Location = new Point(202, 53);
+            cmbOrigen.Name = "cmbOrigen";
+            cmbOrigen.Size = new Size(121, 23);
+            cmbOrigen.TabIndex = 30;
             // 
             // VentaRepuestos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(544, 529);
-            Controls.Add(grbBuscador);
-            Controls.Add(lblSubtitulo);
-            Controls.Add(lblOrigen);
-            Controls.Add(lblMarca);
+            ClientSize = new Size(544, 446);
+            Controls.Add(tbCargaDeRepuestos);
             Controls.Add(lblTitulo);
-            Controls.Add(lblPrecio);
-            Controls.Add(lblDesc);
-            Controls.Add(lblNumeroRepuesto);
-            Controls.Add(cmbMarca);
-            Controls.Add(cmbOrigen);
-            Controls.Add(btnGuardar);
-            Controls.Add(lstRepuestos);
-            Controls.Add(txtPrecio);
-            Controls.Add(txtDescripcion);
-            Controls.Add(txtNumRepuesto);
             Name = "VentaRepuestos";
             Text = "SP3 - Repuestos";
+            tbCargaDeRepuestos.ResumeLayout(false);
+            tbpCarga.ResumeLayout(false);
+            tbpCarga.PerformLayout();
+            tbpBusqueda.ResumeLayout(false);
+            tbpBusqueda.PerformLayout();
             grbBuscador.ResumeLayout(false);
             grbBuscador.PerformLayout();
             ResumeLayout(false);
@@ -248,25 +290,27 @@
         }
 
         #endregion
-
-        private TextBox txtNumRepuesto;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private TextBox txtDescripcion;
-        private TextBox txtPrecio;
         private ListBox lstRepuestos;
-        private Button btnGuardar;
-        private ComboBox cmbOrigen;
-        private ComboBox cmbMarca;
-        private Label lblNumeroRepuesto;
-        private Label lblDesc;
-        private Label lblPrecio;
         private Label lblTitulo;
-        private Label lblMarca;
-        private Label lblOrigen;
-        private Label lblSubtitulo;
-        private ComboBox cmbMarca2;
-        private RadioButton rbNacional;
-        private RadioButton rbImportado;
+        private TabControl tbCargaDeRepuestos;
+        private TabPage tbpCarga;
+        private Label lblPrecio;
+        private Label lblDesc;
+        private Label lblNumeroRepuesto;
+        private Button btnGuardar;
+        private TextBox txtPrecio;
+        private TextBox txtDescripcion;
+        private TextBox txtNumRepuesto;
+        private TabPage tbpBusqueda;
         private GroupBox grbBuscador;
+        private RadioButton rbNacional;
+        private ComboBox cmbMarca2;
+        private RadioButton rbImportado;
+        private Label lblSubtitulo;
+        private Label lblOrigen;
+        private Label lblMarca;
+        private ComboBox cmbMarca;
+        private ComboBox cmbOrigen;
     }
 }
